@@ -12,8 +12,7 @@ public class HelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
-        //git statis
-        // Find the back button using its ID
+
         ImageView backButton = findViewById(R.id.backbtn);
 
         // Set an OnClickListener for the back button
