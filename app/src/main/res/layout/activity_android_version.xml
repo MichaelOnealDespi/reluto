@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_version_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AndroidVersionActivity">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_icon"
+        android:contentDescription="Back Button"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/android_version_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Android Version"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/android_version_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Minimum Specifications -->
+            <TextView
+                android:id="@+id/minimum_version_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum Specifications"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/minimum_version_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Android 8.0 (Oreo) or higher\n• RAM: 2 GB\n• Storage: 100 MB free space\n• Internet Connection required for full functionality."
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <!-- Optimal Specifications -->
+            <TextView
+                android:id="@+id/optimal_version_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Optimal Specifications"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/optimal_version_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Android 10.0 (Q) or higher\n• RAM: 4 GB\n• Storage: 200 MB free space\n• High-speed internet recommended for smooth performance."
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <!-- Recommended Specifications -->
+            <TextView
+                android:id="@+id/recommended_version_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended Specifications"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/recommended_version_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Android 11.0 (S) or higher\n• RAM: 6 GB or more\n• Storage: 300 MB free space\n• Stable Wi-Fi connection for best user experience."
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <!-- Additional Compatibility Information -->
+            <TextView
+                android:id="@+id/compatibility_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compatibility"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/compatibility_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The ReLuto App is compatible with:\n• Most Android smartphones from major brands\n• Devices with minimum screen size of 6 inches."
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

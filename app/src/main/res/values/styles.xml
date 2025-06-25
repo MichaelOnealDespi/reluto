@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="CircularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerRadius">45dp</item>
+    </style>
+
+    <style name="CustomDatePicker" parent="android:Widget.DatePicker">
+        <item name="android:textColor">@android:color/holo_green_dark</item> <!-- Change text color -->
+        <item name="android:calendarTextColor">@android:color/holo_green_dark</item> <!-- Change calendar text color -->
+        <item name="android:background">@android:color/white</item> <!-- Optional: background color -->
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">32dp</item>
+        <item name="android:minWidth">12dp</item>
+        <!-- Add other properties as needed -->
+    </style>
+
+</resources>

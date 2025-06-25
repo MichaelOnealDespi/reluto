@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpActivity">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/help_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Help Section:\n\n1. **Getting Started**: After logging in, you can navigate through different sections of the app using the bottom navigation bar.\n2. **Searching for Recipes**: Use the search bar to find recipes by ingredients or dish names. You can also filter by category.\n3. **Viewing Recipes**: Tap on any recipe to view its details. You can also save your favorite recipes for easy access later.\n4. **Creating a Recipe**: Tap on the 'Create Recipe' button to add new recipes. Provide a title, ingredients, and instructions to create a recipe.\n5. **Managing Account**: Access your profile settings to update your personal information or change your password.\n6. **Logout**: Use the logout button to sign out of your account.\n\nIf you encounter any issues or have further questions, please reach out to our support team via the contact option in the app."
+    android:textSize="16sp"
+    android:lineSpacingMultiplier="1.2"
+    app:layout_constraintTop_toBottomOf="@id/backbtn"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:padding="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

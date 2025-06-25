@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Project" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/light_primary_variant</item>
+        <!-- Text color -->
+        <item name="colorOnBackground">@color/black</item> <!-- Primary text color -->
+        <item name="colorOnSurface">@color/gray_dark</item> <!-- Secondary text color -->
+
+        <!-- Button colors -->
+        <item name="colorButtonNormal">@color/light_button</item> <!-- Normal button color -->
+
+
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/light_background</item>
+        <item name="colorSurface">@color/light_background_surface</item>
+
+
+
+    </style>
+
+    <style name="Theme.Project" parent="Base.Theme.Project" />
+</resources>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "553551873363",
+    "firebase_url": "https://project-17dce-default-rtdb.firebaseio.com",
+    "project_id": "project-17dce",
+    "storage_bucket": "project-17dce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553551873363:android:558a1368d7aee568c8cda6",
+        "android_client_info": {
+          "package_name": "com.myapp.reluto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk2Na19zlMsM6bhDS1AFgiIGf-E74GLZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

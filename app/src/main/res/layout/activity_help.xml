@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpActivity">
+
+    <!-- Back button to return to previous activity -->
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Title TextView for the help section -->
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="0dp"
+        android:text="Welcome to the Help Section"
+        android:layout_height="wrap_content"
+
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/backbtn"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:padding="16dp" />
+
+    <!-- ScrollView to contain the TextViews -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@id/help_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <!-- Vertical LinearLayout to stack TextViews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/help_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Foodtechnology Users:\n\n1. **Creating a Recipe**: Tap on the 'Create Recipe' button to add new recipes. Enter a title, ingredients, and instructions to build your recipe.\n2. **Editing a Recipe**: Select any recipe from your list to edit its details. Update the title, ingredients, and instructions as needed.\n3. **Deleting a Recipe**: To remove a recipe, choose the delete option from the recipe's detail view.\n4. **Managing Your Profile**: Access your profile settings to update personal information, change your profile picture, and adjust other profile settings.\n5. **Viewing Created Recipes**: Browse through the list of recipes you’ve created to view details or make further changes."
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="8dp" />
+
+            <!-- Additional TextView for further instructions -->
+            <TextView
+                android:id="@+id/help_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Users:\n\n1. After logging in, you can navigate through different sections of the app\n2. **Searching for Recipes**: Use the search bar to find recipes by ingredients or dish names. You can also filter by category.\n3. **Viewing Recipes**: Tap on any recipe to view its details. You can also save your favorite recipes for easy access later.\n4. **Creating a Recipe**: Tap on the 'Create Recipe' button to add new recipes. Provide a title, ingredients, and instructions to create a recipe.\n5. **Managing Account**: Access your profile settings to update your personal information or change your password.\n6. **Logout**: Use the logout button to sign out of your account.\n\nIf you encounter any issues or have further questions, please reach out to our support team via the contact option in the app."
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
